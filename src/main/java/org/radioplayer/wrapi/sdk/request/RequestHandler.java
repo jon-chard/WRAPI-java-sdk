@@ -11,7 +11,8 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import net.adamcin.httpsig.api.Algorithm;
 import net.adamcin.httpsig.api.Authorization;
@@ -26,7 +27,7 @@ import net.adamcin.httpsig.ssh.jce.UserFingerprintKeyId;
 
 public class RequestHandler {
 	
-	private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = LogManager.getLogger(getClass());
 	
 	private String apiKey;
 	private Signer signer;

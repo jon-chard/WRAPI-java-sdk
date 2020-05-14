@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.radioplayer.wrapi.sdk.request.RequestHandler;
 
 public class WRAPIService {

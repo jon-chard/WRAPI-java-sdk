@@ -9,7 +9,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.radioplayer.wrapi.sdk.domain.ArtistPlayCounts;
@@ -28,7 +29,7 @@ import org.radioplayer.wrapi.sdk.request.RetrieveParams;
 
 public class WrapiTest  {
 
-	private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = LogManager.getLogger(getClass());
 	private static WrapiConnector wrapi;
 
 	@BeforeAll

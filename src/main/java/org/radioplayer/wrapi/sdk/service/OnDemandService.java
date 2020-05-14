@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.radioplayer.wrapi.sdk.Constants;
 import org.radioplayer.wrapi.sdk.WrapiResult;
 import org.radioplayer.wrapi.sdk.domain.Data;
@@ -22,7 +23,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 public class OnDemandService extends WRAPIService  {
 	
-	private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = LogManager.getLogger(getClass());
 	
 	private static final String SEARCH_AND_COUNTRY_REQUIRED = "When specifying the 'search' parameter the 'country' parameter is also required.";
 	

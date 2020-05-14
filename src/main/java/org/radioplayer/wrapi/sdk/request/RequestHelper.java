@@ -10,7 +10,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.radioplayer.wrapi.sdk.WrapiResult;
 import org.radioplayer.wrapi.sdk.service.WRAPIService;
 
@@ -22,7 +23,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class RequestHelper extends WRAPIService {
 	
-	private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = LogManager.getLogger(getClass());
 	
 	public RequestHelper(RequestHandler handler) {
 		super(handler);

@@ -20,7 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TimeZone;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.radioplayer.wrapi.sdk.StationFilter;
 import org.radioplayer.wrapi.sdk.WrapiResult;
 import org.radioplayer.wrapi.sdk.domain.Data;
@@ -51,7 +52,7 @@ public class StationsService extends WRAPIService {
 	
 	private static final String GEO_COUNTRY_REQUIRED = "When using the 'geo' parameter a 'country' parameter is required.";
 	
-	private Logger logger = Logger.getLogger(getClass());
+	private Logger logger = LogManager.getLogger(getClass());
 	
 	QueryStringBuilder queryBuilder;
 	RequestHelper requestHelper;
